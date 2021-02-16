@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> titulo de mi pagina</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/Stylos.css" rel="stylesheet">
+    </head>
+    <body>
+    <!--este es un ejemplo de  poseudo clases para manipiular los archivos de html desde css-->
+    <h1>Pseudo clases</h1>
+    <!--creamos una tabla  con sus respectivas celdas-->
+    <table>
+        <!--creamos la cabecera de la de la tabla-->
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Zip Code</th>        
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carlos</td>
+                <td>orellanarapalo@gmail.com</td>
+                <td>199028</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>orellanarapalo@gmail.com</td>
+                <td>199021</td>
+            </tr>
+            <tr>
+                <td>Rapalo</td>
+                <td>orellanarapalo@gmail.com</td>
+                <td>199021</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <form action="">
+        <label for="">Name: <input type="text" maxlength="20" required></label>
+        <label for="">Email: <input type="email" maxlength="100" required></label>
+        <label for="">Zip Code: <input type="number" maxlength="99999"></label>
+        <button type="submit">submit</button>
+    </form>
+    <!--contenedor para crear formas para luego darles estilos y transformaciónes -->
+    <div class="star">
+        <h1>Functions</h1>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+
+    </div>
+    <!--creamos variables con css para poder manipular los items de las listas-->
+    <div class="variables">
+        <h1>Variable</h1>
+        <ul>
+            <li category="fruit">Appel</li>
+            <li category="vegetable">Lettuce</li>
+            <li category="starch">Conr</li>
+            <li category="cereal">avaena</li>
+            <li category="carnes">pollo</li>
+            <li category="granos">frijoles</li>
+            <li category="golocinas">churros</li>
+            <li category="electrodomesticos">refrigerador</li>
+            <li category="hogar"> adornos decorativos</li>
+        </ul>
+
+    </div>
+    <!--Pseudo-elemento-->
+    <div class="pseudo-elemento">
+
+        <p class="primer-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam at voluptatum incidunt officia facilis fugit laborum suscipit odit facere ipsum?</p>
+        <p class="segundo-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam at voluptatum incidunt officia facilis fugit laborum suscipit odit facere ipsum?</p>
+
+        <!--agregando contenido utilizando la funcion attr()-->
+        <p>
+            Lorem ipsum dolor sit
+            <!--la palabra descripcion es utilizada como variable para  luegom poderla utilizar el contenido en css para dar forma o estilo
+            puede ser cualquier palabra pero el contenido debe ir en comillas-->
+            <span tabindex="0" descripcion="Esto es un saludo, utilizado normalmente para saludar rapidamente a otra persona ">hola</span> despedida
+            <span tabindex="0" descripcion="Esto es un saludo, utilizado normalmente para despedirse  de otra persona ">adios</span> 
+            amet.
+        </p>
+
+        <!--creamos un parrafo para utilizar los pseudo elementos first-letter y first-line-->
+        <p class="parrafo-grande">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, delectus nihil? Consectetur, fugiat. Laboriosam ab beatae sunt iste non, enim modi doloribus, esse nihil harum similique expedita ullam dolore soluta!
+            
+        </p>
+    </div>
+    <div class="herencia">
+
+        <h1>herencia</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates laboriosam earum temporibus pariatur amet quaerat illum ad asperiores, neque modi omnis incidunt veniam, laudantium, sapiente error perferendis officiis esse commodi.
+        Qui necessitatibus officiis enim amet ut. Eligendi facere fuga temporibus esse laudantium quidem! Alias exercitationem sapiente aliquam quisquam harum qui, dolores odio tempore. Voluptatum odio id a vero itaque expedita!</p>
+        <table class="tabla-dos" >
+            <tr>
+                <th>Lorem, ipsum.</th>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+            </tr>
+            <tr>
+                <th>Lorem, ipsum dolor.</th>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum.</td>
+            </tr>
+        </table>
+        <img  class="imagen" src="img/PRONOMBRES 2.PNG" alt="Pronombres">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates laboriosam earum temporibus pariatur amet quaerat illum ad asperiores, neque modi omnis incidunt veniam, laudantium, sapiente error perferendis officiis esse commodi.
+        Qui necessitatibus officiis enim amet ut. Eligendi facere fuga temporibus esse laudantium quidem! Alias exercitationem sapiente aliquam quisquam harum qui, dolores odio tempore. Voluptatum odio id a vero itaque expedita!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates laboriosam earum temporibus pariatur amet quaerat illum ad asperiores, neque modi omnis incidunt veniam, laudantium, sapiente error perferendis officiis esse commodi.
+        Qui necessitatibus officiis enim amet ut. Eligendi facere fuga temporibus esse laudantium quidem! Alias exercitationem sapiente aliquam quisquam harum qui, dolores odio tempore. Voluptatum odio id a vero itaque expedita!</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.conteiner{
+    background: rgb(73, 65, 65);
+    width: 90%;
+    box-shadow: inset  6px , 8px 3px black;
+    height: auto;
+    margin: 5px auto;
+}
+.header-principal{
+   display: flex;
+   width: 100%;
+   height: 150px;
+   /* background: rgb(136, 19, 19); */
+   box-shadow: 5px, 4px 10px inset black;
+   flex-direction:row;
+   
+
+}
+
+.logo{
+    display: flex;
+    margin: 10px 10px;
+    min-width: 200px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid white;
+    /* border:  1px solid #000;  */
+    
+}
+.img-logo{
+    border-radius: 15px;
+    padding-bottom:5px ;
+}
+.banner-cabecera{
+    flex: 3;
+    margin: 10px;
+    /* border: 1px solid #000; */
+    background: url("/INGLES/img/banner-cabecera.jpg")no-repeat center/100%;
+    border-radius: 15px;
+    text-align: center;
+}
+.banner-cabecera h1{
+    margin-top: 75px;
+    font-size: 50px;
+    color: rgb(62, 226, 29);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow:rgb(43, 43, 44) 4px 0;
+}
+/*lineas de separacion de la cabecera y el menu */
+hr{
+    margin: 10px;
+    border: 5px solid #9E3A08;
+}
+hr:last-of-type{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+#menu{
+    width: 65%;
+    margin: auto;
+}
+.list-menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.items-menu{
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    /* border-top: 3px solid white;  */
+    border-bottom: 3px solid white; 
+    
+}
+.items{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 5px 7px 3px #15100F;
+}
+/*creamos los estilos con el hover para que  el menu tenga bordes*/
+.items-menu:hover{
+    background: #A41F07;
+    /* border: 3px solid white; */
+    border-top: none;
+    border-radius: 3px;
+    border-bottom: none;
+    border-top: 3px solid white; 
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    transform: scale(1.3);
+    box-shadow: #15100F 5px 5px  4px ;
+    
+}
+
+.verbo-to-be{
+    /* height: 500px; */
+    display: flex;
+    background: white;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.desc{
+    max-width: 700px;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 25px;
+}
+.desc p{
+    text-align: justify;
+    margin: 15px;
+
+}
+.List-Pronouns {
+    list-style:circle;
+    float: left;
+}
+.List-Pronouns li{
+    margin: 5px;
+    padding: 5px;
+}
+span{
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 5px;
+
+}
+.oraciones{
+    float: left;
+    padding-left: 20px;
+    
+}
+.oraciones .sentences{
+    padding: 2.5px;
+    /* padding: ; */
+}
+.parrafo::first-letter{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    float: left;
+    line-height: 25px;
+    padding-right: 5px;
+}
+.desc h2{
+    text-align: center;
+    text-decoration:underline;
+}
+.lista-pronombres{
+    /* border-collapse: collapse; */
+    width: 100%;
+    font-size: 16px;
+    
+}
+/*damos los estilos de los bordos de las filas  para la tabla*/ 
+.lista-pronombres tr{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.lista-pronombres thead tr{
+    background: #171C8F;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.lista-pronombres tbody tr:nth-of-type(odd){
+    background: lightblue;
+}
+.lista-pronombres th, td{
+    padding: 0.70rem 0.75rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+footer{
+    height: 150px;
+}
+
+
