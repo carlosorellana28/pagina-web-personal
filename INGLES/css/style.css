@@ -1,3 +1,4 @@
+/* inicializamos los margenes por defecto de la pagina */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -55,6 +56,7 @@ hr{
     margin: 10px;
     border: 5px solid #9E3A08;
 }
+/* a la ultima linea de la cabecera le ponemos doferentes parametros  */
 hr:last-of-type{
     width: 80%;
     margin: auto;
