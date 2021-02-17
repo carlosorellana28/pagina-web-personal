@@ -79,7 +79,16 @@ hr:last-of-type{
     text-align: center;
     /* border-top: 3px solid white;  */
     border-bottom: 3px solid white; 
+    position: relative;
+     overflow: hidden; 
     
+}
+.lista-menu-items{
+    /* display:none; */
+    position:absolute;
+    list-style: none;
+    background: #1D1D1E;
+    top: 100%;
 }
 .items{
     font-family: 'Courier New', Courier, monospace;
@@ -91,7 +100,7 @@ hr:last-of-type{
 }
 /*creamos los estilos con el hover para que  el menu tenga bordes*/
 .items-menu:hover{
-    background: #A41F07;
+    background: #0F0F0F;
     /* border: 3px solid white; */
     border-top: none;
     border-radius: 3px;
@@ -101,7 +110,8 @@ hr:last-of-type{
     border-right: 3px solid white;
     transform: scale(1.3);
     box-shadow: #15100F 5px 5px  4px ;
-    
+    overflow: visible;
+    z-index: 1;
 }
 
 .verbo-to-be{
@@ -164,6 +174,22 @@ span{
     text-align: center;
     text-decoration:underline;
 }
+.pie-tabla{
+    background: #0F0F0F;
+}
+.boton{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    text-decoration: none;
+    width: 15%;
+    height: 10px;
+    background: #0F0F0F;
+}
+.col > .boton:hover{
+    transform:scale3d(1.5, 1.5, 1.9);
+    text-decoration: dashed;
+}
+
 .lista-pronombres{
     /* border-collapse: collapse; */
     width: 100%;
