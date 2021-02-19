@@ -1,0 +1,184 @@
+
+.flexible{
+    background: gray;
+    width: auto;
+    border: solid 1px black;
+    margin: 15px 0;
+}
+.flexible:nth-of-type(2n+1){
+    background: green;
+} 
+
+.row{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.caja:nth-child(odd){
+    background: lightgray;
+}
+.caja{
+    flex: 1;
+    margin: 15px;
+    height: 200px;
+    border-radius: 10px;
+    border: 5px solid black;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+}
+
+.row-reverse{
+    display: flex;
+    flex-direction:row-reverse;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 300px;
+    height: 700px;
+}
+.column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 300px;
+    height: 700px;
+}
+.caja:nth-of-type(even):hover{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background: rgb(37, 4, 4);
+    transform: scale(1.25,1.25);
+}
+.column-reverse:last-of-type{
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 300px;
+    height: 700px;
+}
+/*alineacion de cajas con el metodo flexible utilixando un ancho y alto especifico */
+.caja-alineadas{
+    min-width: 350px;
+    height: 200px;
+    margin: 15px;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+
+}
+/*contenedor de cajas flexibles */
+.alineacion{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 15px;
+    height: 350px;
+    align-items:center;
+    justify-content:center;
+    /* align-content:space-between; */
+
+}
+.grilla{
+    display: grid;
+    max-width: 1000px;
+    min-height:200px;
+    /* grid: repeat(2, auto) / auto-flow 80px ; */
+    /* align-items:center; */
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-template-columns: 1fr 7fr 5fr 60px ;
+    /* justify-content:space-evenly;
+    align-items:end; */
+    /* padding: 15px; */
+    gap: 5px; 
+    padding: 10px;
+    
+}
+.hijos{
+    margin: 0;
+    padding: 0;
+    max-width: auto;
+    display: flex;
+    min-height: 60px;
+    border: 5px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.color:nth-of-type(odd){
+    background: rgb(3, 32, 51);
+}
+.color:nth-of-type(even){
+    background: rgb(75, 5, 5);
+}
+
+.header{
+    grid-area:header;
+    background: rgb(192, 187, 187);
+    text-align: center;
+    padding: 5px;
+    
+}
+.main{
+    grid-area: main;
+    background: rgb(124, 122, 122);
+    padding: 10px;
+    margin: 0;
+}
+.main>p{
+    text-align: justify;
+    font-size: 18px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: rgb(124, 122, 122);
+    padding: 10px;
+    margin: 0;
+}
+.footer{
+    grid-area: footer;
+    background: rgb(12, 12, 12);
+    text-align: center;
+    color: white;
+}
+.ejemplo{
+    display: grid;
+    /* definimos las 4  columnas con la siguiente peropiedad */
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    /* luego definimos las 3 filas con la siguiente propiedad dando a la primera fila un valor de 46px y a la ultima 3px dejando una con el valor automatico restante */
+    grid-template-rows:46px auto 36px;
+    grid-template-areas: "header header header header"
+    "main main . sidebar"
+    "footer footer footer sidebar";
+    margin: 0;
+    padding: 0;
+    
+}
+/* perocedemos a darle estilo a la cabecera y al footer  */
+.header, .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.header h2, .footer h2{
+    margin: 0;
+}
+
+
+
